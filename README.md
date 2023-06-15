@@ -9,7 +9,7 @@ Takım Flutter 134
 - Erdem GENÇ: Developer
 - Ecenur BULUT: Developer
 - Türkan Ruva CAN: Developer
-- Sezer SELVİ: Developer
+- Sezer SELVİ: Aktif Olmayan Uye
 
 ## Ürün İsmi
 
