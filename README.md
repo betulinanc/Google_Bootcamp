@@ -48,10 +48,10 @@ PetGuardian, hayvanların sağlık ve bakımını takip etmek, sahiplendirme sü
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in 60 ile başlaması gerektiğine karar verildi.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats1.pdf]()
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats1](https://github.com/betulinanc/Bootcamp/blob/main/images/chats/chats1.pdf)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Sprint 1]() 
+![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/images/sprint/sprint1.png) 
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
