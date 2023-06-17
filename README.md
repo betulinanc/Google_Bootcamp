@@ -15,6 +15,10 @@ Takım Flutter 134
 
 --PetGuardian--
 
+## Product Backlog URL
+
+[Flutter Team 134 Miro Backlog Board](https://miro.com/app/board/uXjVM-Kjkr4=/)
+
 ## Ürün Açıklaması
 
 PetGuardian, hayvanların sağlık ve bakımını takip etmek, sahiplendirme sürecini kolaylaştırmak ve hayvan severlerin ihtiyaçlarını karşılamak için geliştirilen kapsamlı bir uygulamadır. Hayvanların benzersiz kimlik numaraları ve profilleri ile birlikte, hayvan barınaklarının ve sahiplenen kişilerin ihtiyaçlarını karşılamak için özel olarak tasarlanmış bir platformdur.
@@ -37,3 +41,27 @@ PetGuardian, hayvanların sağlık ve bakımını takip etmek, sahiplendirme sü
 - Potansiyel Sahipler
 - Hayvan Barınakları ve Koruma Kuruluşları
 - Veterinerler
+
+# Sprint 1
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 60 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in 60 ile başlaması gerektiğine karar verildi.
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats1.pdf]()
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Sprint 1]() 
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+  ![Screenshot 1]()
+  ![Screenshot 2]()
+ 
+- **Sprint Review**: 
+Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Fatma Betül İNANÇ
+- **Sprint Retrospective:**
+  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
+  - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
+  - Github kullanımı konusunda kendimizi geliştirmemiz önemle vurgulanmıştır.
+ 
