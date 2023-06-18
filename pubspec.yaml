@@ -1,0 +1,10 @@
+name: my_flutter_app
+description: A sample Flutter application
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  material:
