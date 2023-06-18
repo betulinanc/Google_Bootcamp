@@ -56,7 +56,7 @@ PetGuardian, hayvanların sağlık ve bakımını takip etmek, sahiplendirme sü
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1]()
-  ![Screenshot 2]()
+  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/images/register.jpeg)
  
 - **Sprint Review**: 
 Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Fatma Betül İNANÇ
