@@ -55,6 +55,7 @@ PetGuardian, hayvanların sağlık ve bakımını takip etmek, sahiplendirme sü
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
+  <p> </p>
   ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/login1.jpeg)
   ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/login2.jpeg)
   ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/register.jpeg)
