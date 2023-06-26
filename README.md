@@ -44,6 +44,7 @@ PetGuardian, hayvanların sağlık ve bakımını takip etmek, sahiplendirme sü
 
 # Sprint 1
 
+- **Sprint Notları**: Sprint bizlerin finalleriyle çakışmasından dolayı zaman sıkıntısı yaşanmış olup User Story'ler product backlog'ların içine yazılmıştır.Product backlog item'lara tıklandığında hikayelerin detayları okunabilir
 - **Sprint içinde tamamlanması tahmin edilen puan**: 60 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in 60 ile başlaması gerektiğine karar verildi.
