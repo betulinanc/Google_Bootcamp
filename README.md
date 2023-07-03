@@ -86,7 +86,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
   
   ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/home.gif)
   ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/shop.gif)
-  ![Screenshot 3]()
+  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/notifications.jpeg)
   
  
 - **Sprint Review**: 
