@@ -76,7 +76,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprint'in 90 olması gerektiğine karar verildi.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats1](https://github.com/betulinanc/Bootcamp/blob/main/images/chats/chats1.pdf)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats2](https://github.com/betulinanc/Bootcamp/blob/main/images/chats/Ads%C4%B1z%20dok%C3%BCman.pdf)
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/images/sprint/sprint2.png) 
