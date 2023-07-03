@@ -5,8 +5,8 @@ Takım Flutter 134
 # Ürün İle İlgili Bilgiler
 
 ## Takım Elemanları
-- Fatma Betül İNANÇ: Scrum Master / Product Owner / Developer
-- Erdem GENÇ: Developer
+- Fatma Betül İNANÇ: Scrum Master / Developer
+- Erdem GENÇ: Developer / Product Owner 
 - Ecenur BULUT: Developer
 - Türkan Ruva CAN: Developer
 - Sezer SELVİ: Aktif Olmayan Uye
