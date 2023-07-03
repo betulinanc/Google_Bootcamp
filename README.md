@@ -69,3 +69,32 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
   - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
   - Github kullanımı konusunda kendimizi geliştirmemiz önemle vurgulanmıştır.
  
+    # Sprint 2
+
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır.Product backlog item'lara tıklandığında hikayelerin detayları okunabilir
+- **Sprint içinde tamamlanması tahmin edilen puan**: 90 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprint'in 90 olması gerektiğine karar verildi.
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats1](https://github.com/betulinanc/Bootcamp/blob/main/images/chats/chats1.pdf)
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/images/sprint/sprint1.png) 
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+  
+  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/login1.jpeg)
+  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/login2.jpeg)
+  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/register.jpeg)
+  
+ 
+- **Sprint Review**: 
+Alınan kararlar: Ana sayfa gibi aktif kullanıma uygun sayfalar hazırlanmış, kodlanmış ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Fatma Betül İNANÇ
+- **Sprint Retrospective:**
+  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
+  - Yeni sayfalar eklenmiş görev dağılımı yapılmak için toplantı tarihi ayarlanmıştır.
+  - Takım üyelerinin gelecek sprintlerde daha aktif olması gerektiğine vurgu yapılmıştır.
+  - Github kullanımı konusunda yeterli bilgiye hala ulaşamadığımızı ve kendimizi geliştirmemiz gerektiği vurgulanmıştır.
+ 
+ 
