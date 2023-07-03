@@ -84,7 +84,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 - **Ürün Durumu**: Ekran görüntüleri:
   
-  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/shop.gif)
+  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/home.gif)
   ![Screenshot 2]()
   ![Screenshot 3]()
   
