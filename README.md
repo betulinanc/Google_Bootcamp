@@ -49,17 +49,17 @@ PetGuardian, hayvanların sağlık ve bakımını takip etmek, sahiplendirme sü
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in 60 ile başlaması gerektiğine karar verildi.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats1](https://github.com/betulinanc/Bootcamp/blob/main/images/chats/chats1.pdf)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats1](https://github.com/betulinanc/Bootcamp/blob/main/photos/chats/chats1.pdf)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/images/sprint/sprint1.png) 
+![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/sprint/sprint1.png) 
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
   
-  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/login1.jpeg)
-  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/login2.jpeg)
-  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/register.jpeg)
+  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/login1.jpeg)
+  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/login2.jpeg)
+  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/register.jpeg)
   
  
 - **Sprint Review**: 
@@ -76,17 +76,17 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprint'in 90 olması gerektiğine karar verildi.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats2](https://github.com/betulinanc/Bootcamp/blob/main/images/chats/Ads%C4%B1z%20dok%C3%BCman.pdf)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats2](https://github.com/betulinanc/Bootcamp/blob/main/photos/chats/Ads%C4%B1z%20dok%C3%BCman.pdf)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/images/sprint/sprint2.png) 
+![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/sprint/sprint2.png) 
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
   
-  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/home.gif)
-  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/shop.gif)
-  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/images/photos/notifications.jpeg)
+  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/home.gif)
+  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/shop.gif)
+  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/notifications.jpeg)
   
  
 - **Sprint Review**: 
