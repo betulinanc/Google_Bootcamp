@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'PetGuardian.dart';
 import 'ShopPage.dart';
 import 'accountpage.dart';
 
@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mağaza Uygulaması',
       home: HomePage(),
     );
   }

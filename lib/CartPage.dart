@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:HomePage/ShopPage.dart';
+import 'package:PetGuardian/ShopPage.dart';
 
 class CartPage extends StatefulWidget {
   final List<ProductInfo> productList;

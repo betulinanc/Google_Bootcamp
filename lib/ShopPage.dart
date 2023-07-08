@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:HomePage/CartPage.dart';
+import 'package:PetGuardian/CartPage.dart';
 import 'AccountPage.dart';
 import 'RentPage.dart';
 

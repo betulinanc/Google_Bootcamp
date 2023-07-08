@@ -1,11 +1,14 @@
-mport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'HomePage.dart';
+import 'LoginPage.dart';
 
-class LoginPage extends StatefulWidget {
+
+class SigninPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _SigninPageState createState() => _SigninPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _SigninPageState extends State<SigninPage> {
   late String username;
   late String password;
   bool obscurePassword = true;
@@ -13,7 +16,6 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       resizeToAvoidBottomInset: false,
       body: Padding(
         padding: const EdgeInsets.only(left: 55.0, right: 50.0),
@@ -114,10 +116,15 @@ class _LoginPageState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.black87),
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.pink),
                     ),
                     child: Text("GİRİŞ YAP"),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      );
+                      },
                   ),
                 ),
                 SizedBox(width: 20.0),
@@ -129,10 +136,15 @@ class _LoginPageState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.black87),
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.pink),
                     ),
                     child: Text("KAYDOL"),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginPage()),
+                      );
+                    },
                   ),
                 ),
               ],

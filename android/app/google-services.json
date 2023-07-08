@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470351622498",
+    "project_id": "petguardian-bbc37",
+    "storage_bucket": "petguardian-bbc37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470351622498:android:1dd95325b9d2de48e37c3b",
+        "android_client_info": {
+          "package_name": "com.example.anasayfa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470351622498-i0elcobgnbue9agrpkbkigar2f7hk5m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmYW-84-_houoD5zk5YCqriacTz9g-9HU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470351622498-i0elcobgnbue9agrpkbkigar2f7hk5m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
