@@ -1,0 +1,873 @@
+import 'package:flutter/material.dart';
+import 'package:HomePage/page/HomePage.dart';
+import 'package:HomePage/page/ShopPage.dart';
+import 'package:HomePage/page/AccountPage.dart';
+
+class RentPage extends StatefulWidget {
+  const RentPage({super.key});
+
+  @override
+  State<RentPage> createState() => _RentPageState();
+}
+class _RentPageState extends State<RentPage> {
+  @override
+  bool isBireyselSelected = false;
+  bool isBarinakSelected = false;
+  String ad = '';
+  String soyad = '';
+  int yas = 0;
+  String ulke ='';
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.pets,
+                  color: Colors.pink,
+                ),
+                SizedBox(width: 8),
+                Text(
+                  'PetGuardian',
+                  style: TextStyle(color: Colors.pink),
+                ),
+                SizedBox(width: 8),
+                Icon(
+                  Icons.pets,
+                  color: Colors.pink,
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                if (isBireyselSelected && !isBarinakSelected )
+                  Column(
+                    children: [
+                      Text(
+                        'Adı: $ad',
+                        style: TextStyle(fontSize: 20.0),
+                      ),
+                      SizedBox(height: 10.0),
+                      Text(
+                        'Soyadı: $soyad',
+                        style: TextStyle(fontSize: 20.0),
+                      ),
+                      SizedBox(height: 10.0),
+                      Text(
+                        'Yaşı: $yas',
+                        style: TextStyle(fontSize: 20.0),
+                      ),
+                      SizedBox(height: 10.0),
+                      Text(
+                        'Ülke: $ulke',
+                        style: TextStyle(fontSize: 20.0),
+                      ),
+                      SizedBox(height: 10.0),
+                      Icon(Icons.add_box, size: 50.0, color: Colors.green),
+                    ],
+                  ),
+                SizedBox(height: 20),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        setState(() {
+                          isBireyselSelected = true;
+                          isBarinakSelected = false;
+                          ad = 'Nesrin';
+                          soyad = 'Erkişi';
+                          yas = 28;
+                          ulke = 'Türkiye/İstanbul';
+                        });
+                      },
+
+                      child: Text('Bireysel için '),
+                    ),
+                    SizedBox(height: 20, width: 20),
+
+                    Row(
+
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        if (isBarinakSelected && !isBireyselSelected )
+                          Column(
+                            children: [
+                              Text(
+                                'Barınak Adı: $ad',
+                                style: TextStyle(fontSize: 20.0),
+                              ),
+                              SizedBox(height: 10.0),
+                              Text(
+                                'Yetkili Kişi: $soyad',
+                                style: TextStyle(fontSize: 20.0),
+                              ),
+                              SizedBox(height: 10.0),
+                              Text(
+                                'Yaşı: $yas',
+                                style: TextStyle(fontSize: 20.0),
+                              ),
+                              SizedBox(height: 10.0),
+                              Text(
+                                'Ülke: $ulke',
+                                style: TextStyle(fontSize: 20.0),
+                              ),
+                              SizedBox(height: 10.0),
+                              Icon(Icons.add_box, size: 50.0, color: Colors.black),
+                            ],
+                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {
+                                setState(() {
+                                  isBireyselSelected= false;
+                                  isBarinakSelected = true;
+                                  ad = 'İSTANBUL BOLLUCA KÖPEKLERİ';
+                                  soyad = 'Burhan Özkan';
+                                  yas = 28;
+                                  ulke = 'Türkiye/Ankara';
+                                });
+                              },
+
+                              child: Text('Barınak için '),
+                            ),
+                          ],
+                        ),
+
+                      ],
+                    ),
+                  ],
+                ),
+
+              ],
+            ),
+
+          ],
+        ),
+
+      ),
+
+      bottomNavigationBar: BottomAppBar(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 1, vertical: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.home),
+                    SizedBox(width: 8),
+                    Text('Ana Sayfa'),
+                  ],
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ShopPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.shopping_cart),
+                    SizedBox(width: 8),
+                    Text('Market'),
+                  ],
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AccountPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.person),
+                    SizedBox(width: 8),
+                    Text('Hesap'),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+---
+import 'package:flutter/material.dart';
+import 'package:HomePage/page/HomePage.dart';
+import 'package:HomePage/page/ShopPage.dart';
+import 'package:HomePage/page/AccountPage.dart';
+
+class RentPage extends StatefulWidget {
+  const RentPage({super.key});
+
+  @override
+  State<RentPage> createState() => _RentPageState();
+}
+class _RentPageState extends State<RentPage> {
+  @override
+  bool isIndividualSelected = false;
+  bool isCorporateSelected = false;
+  String ad = '';
+  String soyad = '';
+  int yas = 0;
+  String numara ='';
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.pets,
+                  color: Colors.pink,
+                ),
+                SizedBox(width: 8),
+                Text(
+                  'PetGuardian',
+                  style: TextStyle(color: Colors.pink),
+                ),
+                SizedBox(width: 8),
+                Icon(
+                  Icons.pets,
+                  color: Colors.pink,
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+                  Text(
+            'Bakıcı Kiralama için Seçiniz',
+            style: TextStyle(fontSize: 24,
+              fontWeight: FontWeight.normal,
+              color: Colors.black,),
+          ),
+          SizedBox(height: 20),
+
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Checkbox(
+                  value: isIndividualSelected,
+                  onChanged: (value) {
+                    setState(() {
+                      isIndividualSelected = value!;
+                      isCorporateSelected = false;
+                    });
+                  },
+                ),
+                Text('Bireysel'),
+                SizedBox(width: 20),
+                Checkbox(
+                  value: isCorporateSelected,
+                  onChanged: (value) {
+                    setState(() {
+                      isCorporateSelected = value!;
+                      isIndividualSelected = false;
+                    });
+                  },
+                ),
+                Text('Barınak'),
+              ],
+            ),
+            SizedBox(height: 20),
+            if (isIndividualSelected)
+              Column(
+                children: [
+                  Image.asset('assets/images/photo_individual.png'),
+                  Text('Ad Soyad'),
+                  Text('Yaş'),
+                  Text('Numara'),
+                  Icon(Icons.check),
+                ],
+              ),
+            if (isCorporateSelected)
+              Column(
+                children: [
+                  Image.asset('assets/images/photo_corporate.png'),
+                  Text('Ad Soyad'),
+                  Icon(Icons.add_box),
+                ],
+              ),
+          ],
+        ),
+      ),
+
+      bottomNavigationBar: BottomAppBar(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 1, vertical: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.home),
+                    SizedBox(width: 8),
+                    Text('Ana Sayfa'),
+                  ],
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ShopPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.shopping_cart),
+                    SizedBox(width: 8),
+                    Text('Market'),
+                  ],
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AccountPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.person),
+                    SizedBox(width: 8),
+                    Text('Hesap'),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+--------------------------
+------------------------
+--------------------------
+
+import 'package:flutter/material.dart';
+import 'package:HomePage/page/HomePage.dart';
+import 'package:HomePage/page/ShopPage.dart';
+import 'package:HomePage/page/AccountPage.dart';
+
+class RentPage extends StatefulWidget {
+  const RentPage({super.key});
+
+  @override
+  State<RentPage> createState() => _RentPageState();
+}
+class _RentPageState extends State<RentPage> {
+  @override
+  bool isIndividualSelected = false;
+  bool isCorporateSelected = false;
+  List<Map<String, dynamic>> BireyselList = [
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Ayşe', 'soyad': 'Fatma', 'konum': 'balıkesir', 'yaş':'28'},
+    {'Image': 'images/pets_images/image1.jpg','ad': 'Jane', 'soyad': 'Smith', 'konum': 'antep', 'yaş':'25'},
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Michael', 'soyad': 'Johnson', 'konum': 'adana', 'yaş':'35'},
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Michael', 'soyad': 'Johnson', 'konum': 'adana', 'yaş':'35'},
+  ];
+  List<Map<String, dynamic>> BarinakList = [
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Ayşe', 'soyad': 'Fatma', 'konum': 'balıkesir', 'yaş':'28'},
+    {'Image': 'images/pets_images/image1.jpg','ad': 'Jane', 'soyad': 'Smith', 'konum': 'antep', 'yaş':'25'},
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Michael', 'soyad': 'Johnson', 'konum': 'adana', 'yaş':'35'},
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Michael', 'soyad': 'Johnson', 'konum': 'adana', 'yaş':'35'},
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+
+
+            Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.pets,
+                color: Colors.pink,
+              ),
+              SizedBox(width: 8),
+              Text(
+                'PetGuardian',
+                style: TextStyle(color: Colors.pink),
+              ),
+              SizedBox(width: 8),
+              Icon(
+                Icons.pets,
+                color: Colors.pink,
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          Text(
+            'Bakıcı Kiralama için Seçiniz',
+            style: TextStyle(fontSize: 24,
+              fontWeight: FontWeight.normal,
+              color: Colors.black,),
+          ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Checkbox(
+                value: isIndividualSelected,
+                onChanged: (value) {
+                  setState(() {
+                    isIndividualSelected = value!;
+                    isCorporateSelected = false;
+                  });
+                },
+              ),
+              Text('Bireysel'),
+              SizedBox(width: 20),
+              Checkbox(
+                value: isCorporateSelected,
+                onChanged: (value) {
+                  setState(() {
+                    isCorporateSelected = value!;
+                    isIndividualSelected = false;
+                  });
+                },
+              ),
+              Text('Barınak'),
+            ],
+          ),
+          SizedBox(height: 20),
+          if (isIndividualSelected && !isCorporateSelected)
+            Column(
+              children: [
+                for (var bireysel in BireyselList)
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(bireysel['Image'],width: 150,),
+                          SizedBox(width: 16),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text('Ad: ${bireysel['ad']}'),
+                              Text('Soyad: ${bireysel['soyad']}'),
+                              Text('Numara: ${bireysel['numara']}'),
+                            ],
+                          ),
+                          SizedBox(width: 10),
+                        ],
+                      ),
+                    ],
+                  ),
+              ],
+            ),
+          if (isCorporateSelected && !isIndividualSelected)
+            Column(
+              children: [
+                for (var barinak in BarinakList)
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(barinak['Image'],width: 150,),
+                          SizedBox(width: 16),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text('Ad: ${barinak['ad']}'),
+                              Text('Soyad: ${barinak['soyad']}'),
+                              Text('Numara: ${barinak['numara']}'),
+                            ],
+                          ),
+                          SizedBox(width: 10),
+                        ],
+                      ),
+                    ],
+                  ),
+                  ],
+                  ),
+                  ],
+                  ),
+          ],
+        ),
+
+    bottomNavigationBar: BottomAppBar(
+
+    child: Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: [
+    ElevatedButton(
+    onPressed: () {
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => HomePage()),
+    );
+    },
+    style: ElevatedButton.styleFrom(
+    foregroundColor: Colors.white,
+    backgroundColor: Colors.pink,
+    ),
+    child: Row(
+    children: [
+    Icon(Icons.home),
+    SizedBox(width: 8),
+    Text('Ana Sayfa'),
+    ],
+    ),
+    ),
+    ElevatedButton(
+    onPressed: () {
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => ShopPage()),
+    );
+    },
+    style: ElevatedButton.styleFrom(
+    foregroundColor: Colors.white,
+    backgroundColor: Colors.pink,
+    ),
+    child: Row(
+    children: [
+    Icon(Icons.shopping_cart),
+    SizedBox(width: 8),
+    Text('Market'),
+    ],
+    ),
+    ),
+    ElevatedButton(
+    onPressed: () {
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => AccountPage()),
+    );
+    },
+    style: ElevatedButton.styleFrom(
+    foregroundColor: Colors.white,
+    backgroundColor: Colors.pink,
+    ),
+    child: Row(
+    children: [
+    Icon(Icons.person),
+    SizedBox(width: 8),
+    Text('Hesap'),
+    ],
+    ),
+    ),
+    ],
+    ),
+    ),
+    ),
+
+
+    );
+
+
+  }
+}
+
+//
+import 'package:flutter/material.dart';
+import 'package:HomePage/page/HomePage.dart';
+import 'package:HomePage/page/ShopPage.dart';
+import 'package:HomePage/page/AccountPage.dart';
+
+class RentPage extends StatefulWidget {
+  const RentPage({super.key});
+
+  @override
+  State<RentPage> createState() => _RentPageState();
+}
+class _RentPageState extends State<RentPage> {
+  @override
+
+  bool isBireyselSelected = false;
+  bool isBarinakSelected = false;
+  List<Map<String, dynamic>>  BireyselList = [
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Ayşe', 'soyad': 'Fatma', 'konum': 'balıkesir', 'yaş':'28'},
+    {'Image': 'images/pets_images/image1.jpg','ad': 'Jane', 'soyad': 'Smith', 'konum': 'antep', 'yaş':'25'},
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Michael', 'soyad': 'Johnson', 'konum': 'adana', 'yaş':'35'},
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad': 'Michael', 'soyad': 'Johnson', 'konum': 'adana', 'yaş':'35'},
+  ];
+  List<Map<String, dynamic>> BarinakList = [
+    {'Image': 'images/animal_shelter/yedikule.jpg','ad':'Yedikule Hayvan Barınağı', 'yer': 'İstanbul'},
+    {'Image': 'images/animal_shelter/kırık-kuyruk.jpg','ad':'Kirikkuyruk.com:\n Sokak Hayvanları Portalı', 'yer': 'İstanbul'},
+    {'Image': 'images/animal_shelter/haydos.png','ad':'Hayvan Dostları Derneği', 'yer': 'Muğla'},
+    {'Image': 'images/animal_shelter/shelter1.jpg','ad':'', 'yer': ''},
+
+
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+
+      body: Align(
+        alignment: Alignment.topCenter,
+        child: Column(
+
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.pets,
+                  color: Colors.pink,
+                ),
+                SizedBox(width: 8),
+                Text(
+                  'PetGuardian',
+                  style: TextStyle(color: Colors.pink),
+                ),
+                SizedBox(width: 10),
+                Icon(
+                  Icons.pets,
+                  color: Colors.pink,
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Bakıcı Kiralama için Seçiniz',
+              style: TextStyle(fontSize: 24,
+                fontWeight: FontWeight.normal,
+                color: Colors.black,),
+            ),
+            SizedBox(height: 20),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Checkbox(
+                  value: isBireyselSelected,
+                  onChanged: (value) {
+                    setState(() {
+                      isBireyselSelected = value!;
+                      isBarinakSelected = false;
+                    });
+                  },
+                ),
+                Text('Bireysel'),
+                SizedBox(width: 20),
+                Checkbox(
+                  value: isBarinakSelected,
+                  onChanged: (value) {
+                    setState(() {
+                      isBarinakSelected = value!;
+                      isBireyselSelected = false;
+                    });
+                  },
+                ),
+                Text('Barınak'),
+              ],
+            ),
+
+            SizedBox(height: 20),
+            if (isBireyselSelected )
+              Column(
+                children: [
+                  for (var bireysel in BireyselList)
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset(bireysel['Image'],width: 120,),
+                            SizedBox(width: 16),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Ad: ${bireysel['ad']}'),
+                                Text('Soyad: ${bireysel['soyad']}'),
+                                Text('Konum: ${bireysel['konum']}'),
+                                Text('Yaşı: ${bireysel['yas']}'),
+                                SizedBox(width: 10),
+                              ],
+                            ),
+
+                          ],
+                        ),
+                      ],
+                    ),
+                ],
+              ),
+            if (isBarinakSelected )
+              Column(
+                children: [
+                  for (var barinak in BarinakList)
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset(barinak['Image'],width: 120,),
+                            SizedBox(width: 16),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Barınak Adı: ${barinak['ad']}'),
+                                Text('Konumu: ${barinak['yer']}'),
+                                SizedBox(height: 15)
+
+                              ],
+                            ),
+
+                          ],
+                        ),
+                      ],
+                    ),
+                ],
+              ),
+                    ],
+
+                    ),
+
+      ),
+
+
+
+
+
+
+
+        bottomNavigationBar: BottomAppBar(
+
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.home),
+                    SizedBox(width: 8),
+                    Text('Ana Sayfa'),
+                  ],
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ShopPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.shopping_cart),
+                    SizedBox(width: 8),
+                    Text('Market'),
+                  ],
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AccountPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.pink,
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.person),
+                    SizedBox(width: 8),
+                    Text('Hesap'),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+
+
+
+
+
+    );
+
+
+  }
+}
+
+
+
+
