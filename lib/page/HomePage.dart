@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+mport 'package:flutter/material.dart';
+import 'Notificationpage.dart';
 
 import 'ShopPage.dart';
 import 'AccountPage.dart';
@@ -84,6 +85,19 @@ class _HomePageState extends State<HomePage> {
             Icon(
               Icons.pets,
               color: Colors.pink,
+            ),
+            SizedBox(width: 8),
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Notificationpage()),
+                );
+              },
+              icon: Icon(
+                Icons.notifications,
+                color: Colors.black,
+              ),
             ),
           ],
         ),
