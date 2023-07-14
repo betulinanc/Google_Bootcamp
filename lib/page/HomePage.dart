@@ -1,8 +1,8 @@
-mport 'package:flutter/material.dart';
-import 'Notificationpage.dart';
+import 'package:flutter/material.dart';
 
 import 'ShopPage.dart';
-import 'AccountPage.dart';
+import 'accountpage.dart';
+import 'NotificationPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
               Icons.pets,
               color: Colors.pink,
             ),
-            SizedBox(width: 8),
+            SizedBox(width: 12),
             IconButton(
               onPressed: () {
                 Navigator.push(
@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> {
                     () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => MyApp()),
                   );
                 },
               ),
