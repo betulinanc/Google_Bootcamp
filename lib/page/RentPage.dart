@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
 import 'package:url_launcher/url_launcher.dart';
-
 import 'ShopPage.dart';
 import 'AccountPage.dart';
 
