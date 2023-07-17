@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:petguardian/Pages/AccountPage.dart';
 import 'package:petguardian/Pages/NotificationPage.dart';
+import 'package:petguardian/Pages/PetDetailPage.dart';
 import 'package:petguardian/Pages/ShopPage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -210,20 +211,28 @@ class _HomePageState extends State<HomePage> {
                 height: 120,
                 child: Image.network(
                   imageInfo.imagePath,
-                  fit: BoxFit.fitHeight,// Resim Kutucuğu ayarlama
+                  fit: BoxFit.fitHeight,
                 ),
               ),
             ),
-            SizedBox(height: 8), // Spacing between image and title
+            SizedBox(height: 8),
             Text(
               imageInfo.title,
               style: TextStyle(fontSize: 16, color: Colors.black),
             ),
-            SizedBox(height: 8), // Spacing between title and button
+            SizedBox(height: 8),
             ElevatedButton(
               onPressed: () {
                 // Bilgi al butonuna tıklandığında yapılacak işlemler
                 print('Bilgi Al butonuna tıklandı: ${imageInfo.title}');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PetDetailPage(
+                      title: imageInfo.title,
+                    ),
+                  ),
+                );
               },
               child: Text('Bilgi Al'),
             ),

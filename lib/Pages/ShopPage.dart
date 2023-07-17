@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:petguardian/Pages/HomePage.dart';
 
 import 'AccountPage.dart';
 import 'CartPage.dart';
@@ -127,7 +128,10 @@ class _ShopPageState extends State<ShopPage> {
                 Icons.home,
                 Colors.pink,
                     () {
-                  Navigator.pop(context);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                      );
                 },
               ),
               ElevatedButton.icon(

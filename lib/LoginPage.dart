@@ -22,14 +22,14 @@ class _LoginPageState extends State<LoginPage> {
   @override
   void initState() {
     super.initState();
-    checkUserToken();
+    checkUserLogin();
   }
 
-  Future<void> checkUserToken() async {
+  Future<void> checkUserLogin() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    String? token = prefs.getString(tokenKey);
-    if (token != null) {
-      // Token var, otomatik olarak ana sayfaya yönlendir
+    String? uid = prefs.getString('uid');
+    if (uid != null) {
+      // UID var, otomatik olarak ana sayfaya yönlendir
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => HomePage()),
@@ -47,14 +47,16 @@ class _LoginPageState extends State<LoginPage> {
           password: password,
         );
 
-        // Tokenı kaydet
+        // UID'yi al
+        String uid = userCredential.user!.uid;
+
+        // UID'yi kaydet
         SharedPreferences prefs = await SharedPreferences.getInstance();
+        prefs.setString('uid', uid);
         prefs.setString(tokenKey, 'user_token');
 
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => HomePage()),
-        );
+        // Token kontrolü yap
+        checkUserLogin();
       } catch (e) {
         showDialog(
           context: context,
