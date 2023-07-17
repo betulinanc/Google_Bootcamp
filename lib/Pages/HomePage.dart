@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:petguardian/Pages/AccountPage.dart';
 import 'package:petguardian/Pages/NotificationPage.dart';
+import 'package:petguardian/Pages/PetDetailPage.dart';
 import 'package:petguardian/Pages/ShopPage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -19,9 +20,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    // Firebase'i başlat
     Firebase.initializeApp().then((_) {
-      // Firestore'dan verileri çek ve imageList'e ata
       fetchImageDataFromFirestore().then((data) {
         setState(() {
           imageList = data;
@@ -210,7 +209,7 @@ class _HomePageState extends State<HomePage> {
                 height: 120,
                 child: Image.network(
                   imageInfo.imagePath,
-                  fit: BoxFit.fitHeight,// Resim Kutucuğu ayarlama
+                  fit: BoxFit.fitHeight,
                 ),
               ),
             ),
@@ -224,6 +223,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 // Bilgi al butonuna tıklandığında yapılacak işlemler
                 print('Bilgi Al butonuna tıklandı: ${imageInfo.title}');
+                _onInfoButtonPressed(context, imageInfo);
               },
               child: Text('Bilgi Al'),
             ),
@@ -255,6 +255,15 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
+  void _onInfoButtonPressed(BuildContext context, ImageInfo imageInfo) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => PetDetailPage(title: imageInfo.title, imagePath: imageInfo.imagePath),
+      ),
+    );
+  }
 }
 
 class ImageInfo {
@@ -267,7 +276,6 @@ class ImageInfo {
 Future<List<ImageInfo>> fetchImageDataFromFirestore() async {
   List<ImageInfo> imageData = [];
   try {
-    // Firestore'dan 'pets' koleksiyonundaki verileri çek
     var snapshot = await FirebaseFirestore.instance.collection('pets').get();
     for (var doc in snapshot.docs) {
       var data = doc.data();
