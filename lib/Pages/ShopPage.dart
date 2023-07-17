@@ -12,18 +12,18 @@ class ShopPage extends StatefulWidget {
 
 class _ShopPageState extends State<ShopPage> {
   List<ProductInfo> productList = [
-    ProductInfo('images/shop_images/product1.jpg', 'Goody Köpek Maması', 99.99),
-    ProductInfo('images/shop_images/product2.jpg', 'Perfect Köpek maması', 19.99),
-    ProductInfo('images/shop_images/product3.jpg', 'Reflex Köpek Maması', 14.99),
-    ProductInfo('images/shop_images/product4.jpg', 'Pro Plan', 7.99),
-    ProductInfo('images/shop_images/product5.jpg', 'Ürün 5', 12.99),
-    ProductInfo('images/shop_images/product6.jpg', 'Ürün 6', 9.99),
-    ProductInfo('images/shop_images/product7.jpg', 'Hills Köpek Maması', 6.99),
-    ProductInfo('images/shop_images/product8.jpg', 'Ürün 8', 16.99),
-    ProductInfo('images/shop_images/product9.jpg', 'Ürün 9', 11.99),
-    ProductInfo('images/shop_images/product10.jpg', 'Ürün 10', 8.99),
-    ProductInfo('images/shop_images/product11.jpg', 'Ürün 11', 13.99),
-    ProductInfo('images/shop_images/product12.jpg', 'Ürün 12', 15.99),
+    ProductInfo('images/shop_images/product1.jpg', 'PetGuardian Tasma', 99.99),
+    ProductInfo('images/shop_images/product2.jpg', 'Perfect Köpek maması', 190.99),
+    ProductInfo('images/shop_images/product3.jpg', 'Reflex Köpek Maması', 125.99),
+    ProductInfo('images/shop_images/product4.jpg', 'Pedigre', 70.99),
+    ProductInfo('images/shop_images/product5.jpg', 'Pro Plan', 105.99),
+    ProductInfo('images/shop_images/product6.jpg', 'Croque', 299.99),
+    ProductInfo('images/shop_images/product7.jpg', 'Hills Köpek Maması', 109.99),
+    ProductInfo('images/shop_images/product8.jpg', 'Goody Köpek Maması', 210.99),
+    ProductInfo('images/shop_images/product9.jpg', 'Reflex Set', 300.99),
+    ProductInfo('images/shop_images/product10.jpg', 'Whiskas', 280.99),
+    ProductInfo('images/shop_images/product11.jpg', 'Hills Sciene Plan', 130.99),
+    ProductInfo('images/shop_images/product12.jpg', 'Mera Kedi Maması', 159.99),
   ];
 
   List<ProductInfo> cartItems = [];

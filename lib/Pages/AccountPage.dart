@@ -21,6 +21,7 @@ class _AccountPageState extends State<AccountPage> {
   bool _isLoggingOut = false;
   File? _image;
   String? _imageUrl;
+  String? _fullName;
 
   static const _imageKey = 'profil_resmi'; // Key definition
 
@@ -289,7 +290,7 @@ class _AccountPageState extends State<AccountPage> {
             ),
             SizedBox(height: 16),
             Text(
-              user?.displayName ?? 'FullName',
+              _fullName ?? 'Erdem Genc',
               style: TextStyle(fontSize: 24),
             ),
             SizedBox(height: 8),
