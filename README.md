@@ -114,7 +114,7 @@ Alınan kararlar: Ana sayfa gibi aktif kullanıma uygun sayfalar hazırlanmış,
   
   ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/kiralama.jpeg)
   ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/kullanici.jpeg)
-  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/notifications.jpeg)
+  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/bakici.gif)
   
  
 - **Sprint Review**: 
