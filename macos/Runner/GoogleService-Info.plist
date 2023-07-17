@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>274043292034-fjp5vpk0j0278mgbs0p4pgjag1e7v95v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.274043292034-fjp5vpk0j0278mgbs0p4pgjag1e7v95v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2REpJmTq87SZz7YpyJhrny7FztSL0ASw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>274043292034</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.petguardian.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>petguardian-0000</string>
+	<key>STORAGE_BUCKET</key>
+	<string>petguardian-0000.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:274043292034:ios:cbe67a641c6ec40fa4679b</string>
+</dict>
+</plist>

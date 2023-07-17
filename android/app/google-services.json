@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "274043292034",
+    "project_id": "petguardian-0000",
+    "storage_bucket": "petguardian-0000.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274043292034:android:ddf5b90fd28a2ecea4679b",
+        "android_client_info": {
+          "package_name": "com.example.petguardian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274043292034-aecplfmg79ckg314re64n565s9g05orm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOh_TAmwn9dfvA1GC0Zc3lUx0aM5NNMgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274043292034-aecplfmg79ckg314re64n565s9g05orm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
