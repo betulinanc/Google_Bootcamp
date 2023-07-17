@@ -79,7 +79,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats2](https://github.com/betulinanc/Bootcamp/blob/main/photos/chats/Ads%C4%B1z%20dok%C3%BCman.pdf)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/sprint/sprint2.png) 
+![Sprint 2](https://github.com/betulinanc/Bootcamp/blob/main/photos/sprint/sprint2.png) 
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
@@ -95,6 +95,34 @@ Alınan kararlar: Ana sayfa gibi aktif kullanıma uygun sayfalar hazırlanmış,
   - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
   - Yeni sayfalar eklenmiş görev dağılımı yapılmak için toplantı tarihi ayarlanmıştır.
   - Takım üyelerinin gelecek sprintlerde daha aktif olması gerektiğine vurgu yapılmıştır.
+  - Github kullanımı konusunda yeterli bilgiye hala ulaşamadığımızı ve kendimizi geliştirmemiz gerektiği vurgulanmıştır.
+
+   # Sprint 3
+
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır.Product backlog item'lara tıklandığında hikayelerin detayları okunabilir
+- **Sprint içinde tamamlanması tahmin edilen puan**: 110 Puan
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde üçüncü sprint'in 110 olması gerektiğine karar verildi.
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats2](https://github.com/betulinanc/Bootcamp/blob/main/photos/chats/Ads%C4%B1z%20dok%C3%BCman.pdf)
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Sprint 3](https://github.com/betulinanc/Bootcamp/blob/PetGuardian/photos/sprint/sprint3.png) 
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+  
+  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/home.gif)
+  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/shop.gif)
+  ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/notifications.jpeg)
+  
+ 
+- **Sprint Review**: 
+Alınan kararlar: Eksik olan bildirim sayfamızın yanına bakıcı kiralama sayfası ve firebase işlemlerini ekledik. Sprint Review katılımcıları: Fatma Betül İNANÇ
+- **Sprint Retrospective:**
+  - Yeni sayfalar eklenmiş yeni görevler doğmuştur.
+  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
+  - Proje teslimi için son gözden geçirme toplantısı yapılmıştır.
   - Github kullanımı konusunda yeterli bilgiye hala ulaşamadığımızı ve kendimizi geliştirmemiz gerektiği vurgulanmıştır.
  
  
