@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'ShopPage.dart';
 import 'AccountPage.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 class RentPage extends StatefulWidget {
 
@@ -10,6 +11,7 @@ class RentPage extends StatefulWidget {
   State<RentPage> createState() => _RentPageState();
 }
 class _RentPageState extends State<RentPage> {
+  late  String title;
 
   bool isBarinakSelected = true;
   bool isVeterinerSelected=false;
@@ -19,7 +21,7 @@ class _RentPageState extends State<RentPage> {
     {'Image': 'images/animal_shelter/kadıköybarınak.jpg','ad':'\nKadıköy Belediyesi Geçici Hayvan Bakımevi', 'yer': 'İstanbul'},
     {'Image': 'images/animal_shelter/kırık-kuyruk.jpg','ad':'\nKirikkuyruk.com: Sokak Hayvanları Portalı', 'yer': 'İstanbul'},
     {'Image': 'images/animal_shelter/haydos.png','ad':'\nHayvan Dostları Derneği', 'yer': 'Muğla'},
-    {'Image': 'images/animal_shelter/şişlirehabilitasyon.jpg','ad':'\nŞişli Belediyesi Hayvan K ', 'yer': 'İstanbul'},
+    {'Image': 'images/animal_shelter/şişlirehabilitasyon.jpg','ad':'\nŞişli Belediyesi Hayvan Kısırlaştırma ve \nRehabilitasyon Merkezi ', 'yer': 'İstanbul'},
 
   ];
   List<Map<String, dynamic>> VeterinerList = [
@@ -34,29 +36,8 @@ class _RentPageState extends State<RentPage> {
 
 
   ];
-  void _kiralandi() {
 
-    showDialog(
 
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Bakıcı Kiralama İşlemi'),
-          content: Text('Kiralama işlemini tamamladınız! \nİlgili kişiler sizinle mail yoluyla iletişim kuracaktır.'),
-
-          actions: <Widget>[
-            TextButton(
-              onPressed: (){
-                Navigator.of(context).pop();
-              },
-
-              child: Text('Tamam'),
-            ),
-          ],
-        );
-      },
-    );
-  }
   void _bireyselsecimi() {
 
     showDialog(
@@ -65,7 +46,7 @@ class _RentPageState extends State<RentPage> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Bireysel Evcil Hayvan Bakıcılığı'),
-          content: Text('Evcil hayvan bakıcılığı için başvuru bulunmamaktadır.  \nYapılan başvuruların kontrolleri yapıldıktan sonra Bireysel kategorisine eklenecektir.'),
+          content: Text(' Evcil hayvan bakıcılığı için başvuru bulunmamaktadır.  \nYapılan başvuruların kontrolleri yapıldıktan sonra Bireysel kategorisine eklenecektir.'),
 
           actions: <Widget>[
             TextButton(
@@ -227,9 +208,34 @@ class _RentPageState extends State<RentPage> {
                                     Text('Konumu: ${barinak['yer']}'),
                                     SizedBox(width: 20),
                                     IconButton(
-                                      icon: Icon(Icons.add_circle_sharp, color: Colors.red),
-                                      onPressed: _kiralandi,
+                                      onPressed: () {
+                                        print('${barinak['ad']} kiralamak için seçildi.');
+
+                                        showDialog(
+                                          context: context,
+                                          builder: (BuildContext context) {
+                                            return AlertDialog(
+                                              title: Text(
+                                                  'Bakıcı Kiralama İşlemi'),
+                                              content: Text(
+                                                  '${barinak['ad']} kiralamak için seçildi. \nİlgili kişiler sizinle email yoluyla iletişim kuracaktır.'),
+                                              actions: <Widget>[
+                                                TextButton(
+                                                  onPressed: () {
+                                                    Navigator.of(context)
+                                                        .pop();
+                                                  },
+                                                  child: Text('Tamam'),
+                                                ),
+                                              ],
+                                            );
+                                          },
+                                        );
+                                      },
+
+                                      icon: Icon(Icons.add,color: Colors.red),
                                     ),
+
                                     SizedBox(height: 5),
 
                                   ],
@@ -262,8 +268,37 @@ class _RentPageState extends State<RentPage> {
 
 
                                     SizedBox(width: 8),
-                                    Text('Telefon Numarası: ${veteriner['num']}'),
-                                    Icon(Icons.call,color: Colors.red),
+                                    ElevatedButton.icon(style: ElevatedButton.styleFrom(
+                                      primary: Colors.white,
+                                      onPrimary: Colors.black,
+                                    ),
+                                      onPressed: () {
+                                        print('${veteriner['ad']}  ${veteriner['num']} numarası seçildi.');
+                                        showDialog(
+                                          context: context,
+                                          builder: (BuildContext context) {
+                                            return AlertDialog(
+                                              title: Text(
+                                                  'Veteriner seçimi'),
+                                              content: Text(
+                                                  '${veteriner['ad']} ${veteriner['num']} seçildi. '),
+                                              actions: <Widget>[
+                                                TextButton(
+                                                  onPressed: () {
+                                                    Navigator.of(context)
+                                                        .pop();
+                                                  },
+                                                  child: Text('Tamam'),
+                                                ),
+                                              ],
+                                            );
+                                          },
+                                        );
+                                      },
+
+                                      icon: Icon(Icons.phone,color: Colors.red,),
+                                      label: Text('Telefon Numarası: ${veteriner['num']}' ),
+                                    ),
 
                                     SizedBox(height: 20,),
 
@@ -280,7 +315,7 @@ class _RentPageState extends State<RentPage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                       Image.asset('images/animal_shelter/catdog.png',height:320,width: 300),
+                      Image.asset('images/animal_shelter/catdog.png',height:320,width: 300),
                       Text('      PetGuardian, hayvanların sağlık ve bakımını takip etmek, sahiplendirme sürecini kolaylaştırmak ve hayvan severlerin ihtiyaçlarını karşılamak için geliştirilen kapsamlı bir uygulamadır. \n Hayvanların benzersiz kimlik numaraları ve profilleri ile birlikte, hayvan barınaklarının ve sahiplenen kişilerin ihtiyaçlarını karşılamak için özel olarak tasarlanmış bir platformdur.'),
 
 
