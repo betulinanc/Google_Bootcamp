@@ -79,7 +79,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats2](https://github.com/betulinanc/Bootcamp/blob/main/photos/chats/Ads%C4%B1z%20dok%C3%BCman.pdf)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/sprint/sprint2.png) 
+![Sprint 2](https://github.com/betulinanc/Bootcamp/blob/main/photos/sprint/sprint2.png) 
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
@@ -107,7 +107,7 @@ Alınan kararlar: Ana sayfa gibi aktif kullanıma uygun sayfalar hazırlanmış,
 - **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats2](https://github.com/betulinanc/Bootcamp/blob/main/photos/chats/Ads%C4%B1z%20dok%C3%BCman.pdf)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Sprint 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/sprint/sprint3.png) 
+![Sprint 3](https://github.com/betulinanc/Bootcamp/blob/PetGuardian/photos/sprint/sprint3.png) 
 
 
 - **Ürün Durumu**: Ekran görüntüleri:
