@@ -18,6 +18,8 @@ class _AddPetPageState extends State<AddPetPage> {
   TextEditingController _vaccineController = TextEditingController();
   TextEditingController _adoptionController = TextEditingController();
   TextEditingController _chipController = TextEditingController();
+  TextEditingController _type = TextEditingController();
+
   String? _selectedBreed;
   bool _isUploading = false; // Yükleme durumunu tutacak bool değişken
 
@@ -87,6 +89,8 @@ class _AddPetPageState extends State<AddPetPage> {
               SizedBox(height: 16),
               _buildTitleField('Çip Durumu', _chipController),
               SizedBox(height: 16),
+              _buildTitleField('Hayvanın Türü', _type),
+              SizedBox(height: 16),
               ElevatedButton(
                 onPressed: _isUploading ? null : _uploadPetData,
                 child: Text('Kaydet'),
@@ -130,6 +134,7 @@ class _AddPetPageState extends State<AddPetPage> {
         _selectedBreed == null ||
         _ageController.text.isEmpty ||
         _genderController.text.isEmpty ||
+        _type.text.isEmpty ||
         _vaccineController.text.isEmpty ||
         _adoptionController.text.isEmpty ||
         _chipController.text.isEmpty) {
@@ -161,6 +166,7 @@ class _AddPetPageState extends State<AddPetPage> {
         'vaccine': _vaccineController.text,
         'adoption': _adoptionController.text,
         'chip': _chipController.text,
+        'type': _type.text,
         'email': user?.email ?? '', // Eğer kullanıcı giriş yapmamışsa email'i boş bırakırız
         'username': '', // Kullanıcı adı için buraya gerekli alan adı verilmelidir
         'ip': '', // Kullanıcının IP adresini buraya ekleyebilirsiniz
