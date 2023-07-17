@@ -104,7 +104,7 @@ Alınan kararlar: Ana sayfa gibi aktif kullanıma uygun sayfalar hazırlanmış,
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 260 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde üçüncü sprint'in 110 olması gerektiğine karar verildi.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats2](https://github.com/betulinanc/Bootcamp/blob/main/photos/chats/Ads%C4%B1z%20dok%C3%BCman.pdf)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [chats3](https://github.com/betulinanc/Bootcamp/blob/main/photos/chats/chat3.pdf)
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![Sprint 3](https://github.com/betulinanc/Bootcamp/blob/PetGuardian/photos/sprint/sprint3.png) 
@@ -112,13 +112,13 @@ Alınan kararlar: Ana sayfa gibi aktif kullanıma uygun sayfalar hazırlanmış,
 
 - **Ürün Durumu**: Ekran görüntüleri:
   
-  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/home.gif)
-  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/shop.gif)
+  ![Screenshot 1](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/kiralama.jpeg)
+  ![Screenshot 2](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/kullanici.jpeg)
   ![Screenshot 3](https://github.com/betulinanc/Bootcamp/blob/main/photos/photos/notifications.jpeg)
   
  
 - **Sprint Review**: 
-Alınan kararlar: Eksik olan bildirim sayfamızın yanına bakıcı kiralama sayfası ve firebase işlemlerini ekledik. Sprint Review katılımcıları: Fatma Betül İNANÇ
+Alınan kararlar: Eksik olan bildirim sayfamızın yanına bakıcı kiralama sayfasıyla bakıcı olmak için bir kayıt linkine gönderen yeni aksiyonlar ve firebase işlemlerini ekledik. Sprint Review katılımcıları: Fatma Betül İNANÇ
 - **Sprint Retrospective:**
   - Yeni sayfalar eklenmiş yeni görevler doğmuştur.
   - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
