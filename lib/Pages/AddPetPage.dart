@@ -19,6 +19,7 @@ class _AddPetPageState extends State<AddPetPage> {
   TextEditingController _adoptionController = TextEditingController();
   TextEditingController _chipController = TextEditingController();
   TextEditingController _type = TextEditingController();
+  TextEditingController _phoneNumberController = TextEditingController();
 
   String? _selectedBreed;
   bool _isUploading = false; // Yükleme durumunu tutacak bool değişken
@@ -91,6 +92,8 @@ class _AddPetPageState extends State<AddPetPage> {
               SizedBox(height: 16),
               _buildTitleField('Hayvanın Türü', _type),
               SizedBox(height: 16),
+              _buildTitleField('Telefon Numarası (11 Rakam)', _phoneNumberController), // Add phone number field
+              SizedBox(height: 16),
               ElevatedButton(
                 onPressed: _isUploading ? null : _uploadPetData,
                 child: Text('Kaydet'),
@@ -137,8 +140,20 @@ class _AddPetPageState extends State<AddPetPage> {
         _type.text.isEmpty ||
         _vaccineController.text.isEmpty ||
         _adoptionController.text.isEmpty ||
-        _chipController.text.isEmpty) {
+        _chipController.text.isEmpty ||
+        _phoneNumberController.text.isEmpty) {
       print('Tüm alanlar doldurulmalıdır.');
+      // Hata durumunda _isUploading'i false yaparak butona tekrar basılmasını etkinleştir
+      setState(() {
+        _isUploading = false;
+      });
+      return;
+    }
+
+    // Validate the phone number
+    final phoneNumber = _phoneNumberController.text;
+    if (phoneNumber.length != 11 || !phoneNumber.contains(RegExp(r'^\d{11}$'))) {
+      print('Geçerli bir 11 haneli telefon numarası girmelisiniz.');
       // Hata durumunda _isUploading'i false yaparak butona tekrar basılmasını etkinleştir
       setState(() {
         _isUploading = false;
@@ -168,11 +183,7 @@ class _AddPetPageState extends State<AddPetPage> {
         'chip': _chipController.text,
         'type': _type.text,
         'email': user?.email ?? '', // Eğer kullanıcı giriş yapmamışsa email'i boş bırakırız
-        'username': '', // Kullanıcı adı için buraya gerekli alan adı verilmelidir
-        'ip': '', // Kullanıcının IP adresini buraya ekleyebilirsiniz
-        'phone': '', // Telefon numarası için buraya gerekli alan adı verilmelidir
-        'fullname': '', // Ad soyad için buraya gerekli alan adı verilmelidir
-        'location': '', // Konum bilgisi için buraya gerekli alan adı verilmelidir
+        'phone': phoneNumber, // Store the validated phone number
       };
       await FirebaseFirestore.instance
           .collection('pets')
@@ -188,24 +199,5 @@ class _AddPetPageState extends State<AddPetPage> {
         _isUploading = false;
       });
     }
-  }
-
-  // Yükleniyor ekranını gösterecek metod
-  void showLoadingScreen() {
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          content: Row(
-            children: [
-              CircularProgressIndicator(),
-              SizedBox(width: 16),
-              Text("Hayvan ekleniyor..."),
-            ],
-          ),
-        );
-      },
-    );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PetDetailPage extends StatelessWidget {
   final String title;
@@ -41,6 +42,8 @@ class PetDetailPage extends StatelessWidget {
           String age = data['age']?.toString() ?? 'Bilgi yok';
           String gender = data['gender']?.toString() ?? 'Bilgi yok';
           String type = data['type']?.toString() ?? 'Bilgi yok';
+          String fullName = data['email']?.toString() ?? 'Bilgi yok';
+          String phone = data['phone']?.toString() ?? 'Bilgi yok'; // Telefon numarasını alın
 
           return Scaffold(
             appBar: AppBar(
@@ -76,6 +79,15 @@ class PetDetailPage extends StatelessWidget {
                     _buildInfoItem('Yaş', age),
                     _buildInfoItem('Cinsiyet', gender),
                     _buildInfoItem('Tür', type),
+                    _buildInfoItem('Hayvan Sahibi', fullName), // Telefon numarasını göster
+                    _buildInfoItem('Telefon Numarası', phone), // Telefon numarasını göster
+
+                    SizedBox(height: 16),
+                    ElevatedButton.icon(
+                      onPressed: () => _callPetOwner(context, phone), // Telefon numarasını ara
+                      icon: Icon(Icons.call),
+                      label: Text('Ara'),
+                    ),
                   ],
                 ),
               ),
@@ -101,5 +113,30 @@ class PetDetailPage extends StatelessWidget {
         ),
       ],
     );
+  }
+
+  // Telefon numarasını arayan fonksiyon
+  void _callPetOwner(BuildContext context, String phone) async {
+    String url = 'tel:$phone';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      // Telefon uygulamasını başlatma hatası
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Text('Hata'),
+            content: Text('Telefon uygulamasını başlatmak için uygun bir uygulama bulunamadı.'),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: Text('Tamam'),
+              ),
+            ],
+          );
+        },
+      );
+    }
   }
 }
