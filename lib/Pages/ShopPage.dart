@@ -19,11 +19,6 @@ class _ShopPageState extends State<ShopPage> {
     ProductInfo('images/shop_images/product5.jpg', 'Pro Plan', 105.99),
     ProductInfo('images/shop_images/product6.jpg', 'Croque', 299.99),
     ProductInfo('images/shop_images/product7.jpg', 'Hills Köpek Maması', 109.99),
-    ProductInfo('images/shop_images/product8.jpg', 'Goody Köpek Maması', 210.99),
-    ProductInfo('images/shop_images/product9.jpg', 'Reflex Set', 300.99),
-    ProductInfo('images/shop_images/product10.jpg', 'Whiskas', 280.99),
-    ProductInfo('images/shop_images/product11.jpg', 'Hills Sciene Plan', 130.99),
-    ProductInfo('images/shop_images/product12.jpg', 'Mera Kedi Maması', 159.99),
   ];
 
   List<ProductInfo> cartItems = [];
@@ -128,17 +123,17 @@ class _ShopPageState extends State<ShopPage> {
                 Icons.home,
                 Colors.pink,
                     () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => HomePage()),
-                      );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
                 },
               ),
               ElevatedButton.icon(
                 onPressed: () {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => RentPage()),
+                    context,
+                    MaterialPageRoute(builder: (context) => RentPage()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -158,9 +153,9 @@ class _ShopPageState extends State<ShopPage> {
                 Icons.person,
                 Colors.pink,
                     () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => AccountPage()),
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AccountPage()),
 
                   );
                 },
