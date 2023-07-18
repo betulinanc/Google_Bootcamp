@@ -14,6 +14,7 @@ class _RentPageState extends State<RentPage> {
   late  String title;
 
   bool isBarinakSelected = true;
+  bool isBireyselSelected=false;
   bool isVeterinerSelected=false;
   bool isBilgiSelected = false;
   List<Map<String, dynamic>> BarinakList = [
@@ -22,6 +23,10 @@ class _RentPageState extends State<RentPage> {
     {'Image': 'images/animal_shelter/kırık-kuyruk.jpg','ad':'\nKirikkuyruk.com: Sokak Hayvanları Portalı', 'yer': 'İstanbul'},
     {'Image': 'images/animal_shelter/haydos.png','ad':'\nHayvan Dostları Derneği', 'yer': 'Muğla'},
     {'Image': 'images/animal_shelter/şişlirehabilitasyon.jpg','ad':'\nŞişli Belediyesi Hayvan Kısırlaştırma ve \nRehabilitasyon Merkezi ', 'yer': 'İstanbul'},
+
+  ];
+  List<Map<String, dynamic>> BireyselList = [
+    {'Image': 'images/animal_shelter/image.jpg','ad':' Derya Bilgin', 'yas': '28','deneyim':'\nEvcil Hayvan bakıcılığı konusunda bir deneyime \nsahip değilim.','özet':'\nKöpeklere sevgi konusunda bir zaafım var. \n Önem verdiğim 2 husus olarak bakacağım \nköpeklerin mutlu, iyi bakılmış \nve sağlıklı olmaları\nBakım süreci boyunca sahipleriyle iletişimde\nkalarak birbirimize karşılıklı güveni sağlayarak\nhizmet vermekteyim ','num':'5301341340'},
 
   ];
   List<Map<String, dynamic>> VeterinerList = [
@@ -132,6 +137,7 @@ class _RentPageState extends State<RentPage> {
                   isBarinakSelected = true;
                   isVeterinerSelected = false;
                   isBilgiSelected = false;
+                  isBireyselSelected = false;
 
 
                 });
@@ -142,8 +148,15 @@ class _RentPageState extends State<RentPage> {
               leading: Icon(Icons.person,color: Colors.pinkAccent),
               title: Text('Bireysel',style: TextStyle(fontSize: 17,color: Colors.grey )),
               onTap: () {
-                _bireyselsecimi();
+                setState(() {
+                  isBireyselSelected = true;
+                  isVeterinerSelected = false;
+                  isBilgiSelected = false;
+                  isBarinakSelected = false;
 
+
+                });
+                Navigator.pop(context);
               },
             ),
             ListTile(
@@ -161,6 +174,7 @@ class _RentPageState extends State<RentPage> {
                   isBilgiSelected = true;
                   isVeterinerSelected = false;
                   isBarinakSelected = false;
+                  isBireyselSelected=false;
                 });
                 Navigator.pop(context);
               },
@@ -237,6 +251,72 @@ class _RentPageState extends State<RentPage> {
                                     ),
 
                                     SizedBox(height: 5),
+
+                                  ],
+                                ),
+
+                              ],
+                            ),
+                          ],
+                        ),
+                    ],
+                  ),
+                if (isBireyselSelected )
+                  Column(
+                    children: [
+                      for (var bireysel in BireyselList)
+                        Column(
+                          children: [
+                            Row(
+                              children: [
+                                Image.asset(bireysel['Image'],height:110,width: 100),
+
+                                SizedBox(width: 10),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text('Adı Soyadı: ${bireysel['ad']}'),
+
+                                    Text('Yaşı: ${bireysel['yas']}'),
+                                    Text('Evcil Hayvan Bakıcılık Deneyimi: ${bireysel['deneyim']}'),
+                                    Text('Kısaca Özet: ${bireysel['özet']}'),
+                                    Text('Telefon Numarası: ${bireysel['num']}'),
+                                    SizedBox(width: 8),
+                                    ElevatedButton(style: ElevatedButton.styleFrom(
+                                      primary: Colors.white,
+                                      onPrimary: Colors.black,
+                                    ),
+                                      onPressed: () {
+                                        print('${bireysel['ad']}  evcil hayvan bakıcılığı için seçildi.');
+                                        showDialog(
+                                          context: context,
+                                          builder: (BuildContext context) {
+                                            return AlertDialog(
+                                              title: Text(
+                                                  'Bireysel Evcil Hayvan Bakıcılığı Seçimi'),
+                                              content: Text(
+                                                  '${bireysel['ad']}  ${bireysel['num']}  evcil hayvan bakıcılığı için seçildi.'),
+                                              actions: <Widget>[
+                                                TextButton(
+                                                  onPressed: () {
+                                                    Navigator.of(context)
+                                                        .pop();
+                                                  },
+                                                  child: Text('Tamam'),
+                                                ),
+                                              ],
+                                            );
+                                          },
+                                        );
+                                      },
+
+
+                                      child:  Icon(Icons.add,color: Colors.red,),
+
+                                    ),
+
+
+                                    SizedBox(height: 20,),
 
                                   ],
                                 ),
